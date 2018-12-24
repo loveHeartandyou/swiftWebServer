@@ -1,2 +1,2 @@
 # swiftWebServer
-swift webServer exercize project 
+swift webServer exercise project 
