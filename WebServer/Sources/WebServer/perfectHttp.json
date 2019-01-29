@@ -1,0 +1,11 @@
+[
+    "server":"localhost",
+    "port":8181,
+    "routes":{
+        [
+            "method":"get",
+            "uri":"/",
+            "hander":"WebHandlers.indexHandlers",
+        ]
+    }
+]

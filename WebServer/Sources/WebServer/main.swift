@@ -2,11 +2,9 @@ import PerfectLib
 import PerfectHTTP
 import PerfectHTTPServer
 
-let server = HTTPServer()
-server.serverPort = 8181;
-server.addRoutes(makeRoutes())
 do {
-    try server.start()
-} catch PerfectError.networkError(let err, let msg)  {
-    
+    // Launch the servers based on the configuration data.
+    try HTTPServer.launch(configurationData: HttpServerConfig.serversConfig)
+} catch {
+    fatalError("\(error)") // fatal error launching one of the servers
 }
