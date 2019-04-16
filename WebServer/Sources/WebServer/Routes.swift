@@ -20,5 +20,6 @@ public func makeRoutes() -> Routes {
         _ = try? response.setBody(json: opt)
         response.completed()
     }
+    routes.add(method: HTTPMethod.get, uri: "/upload/{id}/{m}", handler: Handlers.uploadFile)
     return routes
 }
